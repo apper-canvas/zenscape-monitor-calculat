@@ -474,4 +474,3 @@ class GardenService {
 }
 
 export default new GardenService()
-export default new GardenService()
