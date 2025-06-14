@@ -6,11 +6,11 @@
     "duration": 600,
     "category": "Nature",
     "instructor": "Sage Thompson",
-    "audioUrl": "/audio/mountain-meditation.mp3",
+    "audio_url": "/audio/mountain-meditation.mp3",
     "difficulty": "Beginner",
     "tags": ["grounding", "stability", "breath"],
     "thumbnail": "🏔️",
-    "createdAt": "2024-01-01T00:00:00Z"
+    "CreatedOn": "2024-01-01T00:00:00Z"
   },
   {
     "id": "2",
@@ -19,11 +19,11 @@
     "duration": 480,
     "category": "Nature",
     "instructor": "River Chen",
-    "audioUrl": "/audio/flowing-water.mp3",
+    "audio_url": "/audio/flowing-water.mp3",
     "difficulty": "Beginner",
     "tags": ["release", "flow", "relaxation"],
     "thumbnail": "🌊",
-    "createdAt": "1/1/2024 12:00:00 AMZ"
+    "CreatedOn": "2024-01-01T00:00:00Z"
   },
   {
     "id": "3",
@@ -32,11 +32,11 @@
     "duration": 720,
     "category": "Mindfulness",
     "instructor": "Lotus Nakamura",
-    "audioUrl": "/audio/garden-presence.mp3",
+    "audio_url": "/audio/garden-presence.mp3",
     "difficulty": "Intermediate",
     "tags": ["presence", "awareness", "sanctuary"],
     "thumbnail": "🌸",
-    "createdAt": "2024-01-01T00:00:00Z"
+    "CreatedOn": "2024-01-01T00:00:00Z"
   },
   {
     "id": "4",
@@ -45,11 +45,11 @@
     "duration": 900,
     "category": "Focus",
     "instructor": "Marcus Stone",
-    "audioUrl": "/audio/stone-meditation.mp3",
+    "audio_url": "/audio/stone-meditation.mp3",
     "difficulty": "Advanced",
     "tags": ["focus", "concentration", "ancient"],
     "thumbnail": "🪨",
-    "createdAt": "2024-01-01T00:00:00Z"
+    "CreatedOn": "2024-01-01T00:00:00Z"
   },
   {
     "id": "5",
@@ -58,11 +58,11 @@
     "duration": 420,
     "category": "Growth",
     "instructor": "Sage Thompson",
-    "audioUrl": "/audio/bamboo-flexibility.mp3",
+    "audio_url": "/audio/bamboo-flexibility.mp3",
     "difficulty": "Beginner",
     "tags": ["resilience", "adaptation", "growth"],
     "thumbnail": "🎋",
-    "createdAt": "2024-01-01T00:00:00Z"
+    "CreatedOn": "2024-01-01T00:00:00Z"
   },
   {
     "id": "6",
@@ -71,10 +71,10 @@
     "duration": 360,
     "category": "Evening",
     "instructor": "Luna Paz",
-    "audioUrl": "/audio/evening-reflection.mp3",
+    "audio_url": "/audio/evening-reflection.mp3",
     "difficulty": "Beginner",
     "tags": ["reflection", "gratitude", "evening"],
     "thumbnail": "🌙",
-    "createdAt": "2024-01-01T00:00:00Z"
+    "CreatedOn": "2024-01-01T00:00:00Z"
   }
 ]
