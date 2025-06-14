@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "date": "2024-01-20T00:00:00Z",
+    "title": "Morning Reflections",
+    "content": "Started my day with 10 minutes in my zen garden. The gentle sound of the virtual stream helped calm my racing thoughts about the week ahead. I'm learning to appreciate these quiet moments before the day's demands take over.\n\nI placed a new lotus flower near the meditation stone today. Something about its symbolism of rising from muddy waters resonates with how I've been feeling lately - emerging from a difficult period with more clarity and peace.",
+    "mood": "peaceful",
+    "tags": ["morning", "meditation", "growth"],
+    "gardenUsed": "1",
+    "createdAt": "2024-01-20T08:30:00Z",
+    "updatedAt": "1/20/2024 8:30:00 AMZ"
+  },
+  {
+    "id": "2",
+    "date": "2024-01-18T00:00:00Z",
+    "title": "Finding Balance",
+    "content": "Today was challenging at work, but coming home to my digital zen garden provided instant relief. I spent 15 minutes rearranging elements, and something about the tactile nature of moving rocks and plants helped settle my mind.\n\nI'm starting to understand why Japanese gardens have been used for contemplation for centuries. There's something profound about creating order and beauty, even in a virtual space.",
+    "mood": "reflective",
+    "tags": ["work-stress", "balance", "evening"],
+    "gardenUsed": "2",
+    "createdAt": "2024-01-18T19:45:00Z",
+    "updatedAt": "2024-01-18T19:45:00Z"
+  },
+  {
+    "id": "3",
+    "date": "2024-01-15T00:00:00Z",
+    "title": "Creative Flow",
+    "content": "Discovered something wonderful today - when I stop trying to make my garden 'perfect' and just let my intuition guide the placement, I enter this beautiful flow state. Time seems to stop, and my worries fade away.\n\nCreated a new garden inspired by a mountain hiking trip last summer. Added bamboo and moss to recreate that sense of peaceful wilderness. It's amazing how digital elements can evoke such real memories and emotions.",
+    "mood": "inspired",
+    "tags": ["creativity", "flow", "memories"],
+    "gardenUsed": "4",
+    "createdAt": "2024-01-15T14:20:00Z",
+    "updatedAt": "2024-01-15T14:20:00Z"
+  },
+  {
+    "id": "4",
+    "date": "2024-01-12T00:00:00Z",
+    "title": "Meditation Insights",
+    "content": "Combined my garden creation with the guided meditation feature today. The 'Mountain Meditation' session while looking at my mountain-themed garden created such a powerful synergy.\n\nI'm beginning to see how this app is more than just a creative tool - it's becoming a gateway to deeper mindfulness practice. The visual anchors help my wandering mind stay present during meditation.",
+    "mood": "centered",
+    "tags": ["meditation", "mindfulness", "insight"],
+    "gardenUsed": "2",
+    "createdAt": "2024-01-12T16:15:00Z",
+    "updatedAt": "2024-01-12T16:15:00Z"
+  },
+  {
+    "id": "5",
+    "date": "2024-01-10T00:00:00Z",
+    "title": "Digital Sanctuary",
+    "content": "Rough day with anxiety, but my zen garden was like a digital sanctuary. The combination of soft rain sounds and slowly arranging river stones helped ground me when everything felt overwhelming.\n\nI'm grateful for this space to retreat to, even when I can't access nature physically. It's teaching me that peace can be cultivated anywhere, even through pixels and imagination.",
+    "mood": "grateful",
+    "tags": ["anxiety", "grounding", "gratitude"],
+    "gardenUsed": "1",
+    "createdAt": "2024-01-10T21:30:00Z",
+    "updatedAt": "2024-01-10T21:30:00Z"
+  }
+]

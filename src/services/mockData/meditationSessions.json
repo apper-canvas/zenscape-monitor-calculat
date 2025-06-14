@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "title": "Mountain Meditation",
+    "description": "Find stability and strength through mountain imagery and breathwork",
+    "duration": 600,
+    "category": "Nature",
+    "instructor": "Sage Thompson",
+    "audioUrl": "/audio/mountain-meditation.mp3",
+    "difficulty": "Beginner",
+    "tags": ["grounding", "stability", "breath"],
+    "thumbnail": "🏔️",
+    "createdAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "2",
+    "title": "Flowing Water",
+    "description": "Let go of tension as you follow the gentle flow of water",
+    "duration": 480,
+    "category": "Nature",
+    "instructor": "River Chen",
+    "audioUrl": "/audio/flowing-water.mp3",
+    "difficulty": "Beginner",
+    "tags": ["release", "flow", "relaxation"],
+    "thumbnail": "🌊",
+    "createdAt": "1/1/2024 12:00:00 AMZ"
+  },
+  {
+    "id": "3",
+    "title": "Garden of Presence",
+    "description": "Cultivate mindful awareness in your inner garden sanctuary",
+    "duration": 720,
+    "category": "Mindfulness",
+    "instructor": "Lotus Nakamura",
+    "audioUrl": "/audio/garden-presence.mp3",
+    "difficulty": "Intermediate",
+    "tags": ["presence", "awareness", "sanctuary"],
+    "thumbnail": "🌸",
+    "createdAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "4",
+    "title": "Stone Meditation",
+    "description": "Develop unwavering focus through ancient stone meditation techniques",
+    "duration": 900,
+    "category": "Focus",
+    "instructor": "Marcus Stone",
+    "audioUrl": "/audio/stone-meditation.mp3",
+    "difficulty": "Advanced",
+    "tags": ["focus", "concentration", "ancient"],
+    "thumbnail": "🪨",
+    "createdAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "5",
+    "title": "Bamboo Flexibility",
+    "description": "Learn resilience and adaptability through bamboo wisdom",
+    "duration": 420,
+    "category": "Growth",
+    "instructor": "Sage Thompson",
+    "audioUrl": "/audio/bamboo-flexibility.mp3",
+    "difficulty": "Beginner",
+    "tags": ["resilience", "adaptation", "growth"],
+    "thumbnail": "🎋",
+    "createdAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "6",
+    "title": "Evening Reflection",
+    "description": "Wind down with gentle reflection and gratitude practice",
+    "duration": 360,
+    "category": "Evening",
+    "instructor": "Luna Paz",
+    "audioUrl": "/audio/evening-reflection.mp3",
+    "difficulty": "Beginner",
+    "tags": ["reflection", "gratitude", "evening"],
+    "thumbnail": "🌙",
+    "createdAt": "2024-01-01T00:00:00Z"
+  }
+]

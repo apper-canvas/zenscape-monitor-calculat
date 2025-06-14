@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "name": "Gentle Rain",
+    "description": "Soft rainfall on leaves, perfect for deep relaxation",
+    "category": "Weather",
+    "duration": null,
+    "audioUrl": "/audio/gentle-rain.mp3",
+    "volume": 0.7,
+    "popular": true,
+    "icon": "🌧️",
+    "color": "#3B82F6"
+  },
+  {
+    "id": "2",
+    "name": "Forest Stream",
+    "description": "Babbling brook flowing through a peaceful forest",
+    "category": "Water",
+    "duration": null,
+    "audioUrl": "/audio/forest-stream.mp3",
+    "volume": 0.6,
+    "popular": true,
+    "icon": "🏞️",
+    "color": "#10B981"
+  },
+  {
+    "id": "3",
+    "name": "Wind Chimes",
+    "description": "Delicate bamboo chimes dancing in a gentle breeze",
+    "category": "Wind",
+    "duration": null,
+    "audioUrl": "/audio/wind-chimes.mp3",
+    "volume": 0.5,
+    "popular": false,
+    "icon": "🎐",
+    "color": "#C1A572"
+  },
+  {
+    "id": "4",
+    "name": "Bird Song",
+    "description": "Morning chorus of peaceful garden birds",
+    "category": "Nature",
+    "duration": null,
+    "audioUrl": "/audio/bird-song.mp3",
+    "volume": 0.6,
+    "popular": true,
+    "icon": "🐦",
+    "color": "#FACC15"
+  },
+  {
+    "id": "5",
+    "name": "Ocean Waves",
+    "description": "Rhythmic waves washing gently onto shore",
+    "category": "Water",
+    "duration": null,
+    "audioUrl": "/audio/ocean-waves.mp3",
+    "volume": 0.8,
+    "popular": false,
+    "icon": "🌊",
+    "color": "#0EA5E9"
+  },
+  {
+    "id": "6",
+    "name": "Rustling Leaves",
+    "description": "Autumn leaves stirring in a warm breeze",
+    "category": "Wind",
+    "duration": null,
+    "audioUrl": "/audio/rustling-leaves.mp3",
+    "volume": 0.4,
+    "popular": false,
+    "icon": "🍃",
+    "color": "#16A34A"
+  },
+  {
+    "id": "7",
+    "name": "Singing Bowl",
+    "description": "Resonant tones of a Tibetan singing bowl",
+    "category": "Instrumental",
+    "duration": null,
+    "audioUrl": "/audio/singing-bowl.mp3",
+    "volume": 0.6,
+    "popular": true,
+    "icon": "🎵",
+    "color": "#8B5CF6"
+  },
+  {
+    "id": "8",
+    "name": "Night Crickets",
+    "description": "Peaceful chirping of evening crickets",
+    "category": "Night",
+    "duration": null,
+    "audioUrl": "/audio/night-crickets.mp3",
+    "volume": 0.5,
+    "popular": false,
+    "icon": "🦗",
+    "color": "#6366F1"
+  }
+]
