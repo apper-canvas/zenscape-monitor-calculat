@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import GardenElement from '@/components/molecules/GardenElement'
-import Button from '@/components/atoms/Button'
-import ApperIcon from '@/components/ApperIcon'
+import React, { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import GardenElement from "@/components/molecules/GardenElement";
+import Button from "@/components/atoms/Button";
+import ApperIcon from "@/components/ApperIcon";
 
 const GardenCanvas = ({
   elements = [],
@@ -60,10 +60,29 @@ const GardenCanvas = ({
     onElementsChange(updatedElements)
   }
 
-  const clearCanvas = () => {
+const clearCanvas = () => {
     if (window.confirm('Are you sure you want to clear all elements?')) {
       onElementsChange([])
       onElementSelect?.(null)
+    }
+  }
+
+  const captureCanvasAsThumbnail = async () => {
+    if (!canvasRef.current) return null
+    
+    try {
+      // Dynamically import html2canvas for thumbnail generation
+      const html2canvas = (await import('html2canvas')).default
+      const canvas = await html2canvas(canvasRef.current, {
+        width: 200,
+        height: 150,
+        scale: 0.5,
+        backgroundColor: '#f8faf6'
+      })
+      return canvas.toDataURL('image/png')
+    } catch (error) {
+      console.warn('Failed to capture canvas thumbnail:', error)
+      return null
     }
   }
 
