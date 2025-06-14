@@ -17,7 +17,7 @@ class GardenService {
     }
   }
 
-  async getAll() {
+async getAll() {
     await delay(300);
     
     if (!this.apperClient) this.initializeClient();
@@ -34,14 +34,22 @@ class GardenService {
         throw new Error(response.message);
       }
       
-      return response.data || [];
+      // Parse elements field from JSON string to array for each garden
+      const gardens = (response.data || []).map(garden => ({
+        ...garden,
+        elements: typeof garden.elements === 'string' ? 
+          (garden.elements ? JSON.parse(garden.elements) : []) : 
+          (garden.elements || [])
+      }));
+      
+      return gardens;
     } catch (error) {
       console.error('Error fetching gardens:', error);
       throw error;
     }
   }
 
-  async getById(id) {
+async getById(id) {
     await delay(200);
     
     if (!this.apperClient) this.initializeClient();
@@ -51,14 +59,22 @@ class GardenService {
         fields: ['Name', 'Tags', 'Owner', 'description', 'elements', 'is_template', 'thumbnail', 'CreatedOn', 'ModifiedOn']
       };
       
-      const response = await this.apperClient.getRecordById('garden', parseInt(id), params);
+      const response = await this.apperClient.getRecordById('garden', id, params);
       
       if (!response.success) {
         console.error(response.message);
         throw new Error(response.message);
       }
       
-      return response.data;
+      // Parse elements field from JSON string to array
+      const garden = response.data;
+      if (garden) {
+        garden.elements = typeof garden.elements === 'string' ? 
+          (garden.elements ? JSON.parse(garden.elements) : []) : 
+          (garden.elements || []);
+      }
+      
+      return garden;
     } catch (error) {
       console.error(`Error fetching garden with ID ${id}:`, error);
       throw error;
@@ -255,7 +271,15 @@ class GardenService {
         throw new Error(response.message);
       }
       
-      return response.data || [];
+// Parse elements field from JSON string to array for each garden
+      const gardens = (response.data || []).map(garden => ({
+        ...garden,
+        elements: typeof garden.elements === 'string' ? 
+          (garden.elements ? JSON.parse(garden.elements) : []) : 
+          (garden.elements || [])
+      }));
+      
+      return gardens;
     } catch (error) {
       console.error('Error fetching garden templates:', error);
       throw error;
@@ -296,8 +320,15 @@ class GardenService {
         console.error(response.message);
         throw new Error(response.message);
       }
+// Parse elements field from JSON string to array for each garden
+      const gardens = (response.data || []).map(garden => ({
+        ...garden,
+        elements: typeof garden.elements === 'string' ? 
+          (garden.elements ? JSON.parse(garden.elements) : []) : 
+          (garden.elements || [])
+      }));
       
-      return response.data || [];
+      return gardens;
     } catch (error) {
       console.error('Error fetching gardens by category:', error);
       throw error;
@@ -343,49 +374,22 @@ class GardenService {
       
       const response = await this.apperClient.fetchRecords('garden', params);
       
-      if (!response.success) {
+if (!response.success) {
         console.error(response.message);
         throw new Error(response.message);
       }
       
-      return response.data || [];
+      // Parse elements field from JSON string to array for each garden
+      const gardens = (response.data || []).map(garden => ({
+        ...garden,
+        elements: typeof garden.elements === 'string' ? 
+          (garden.elements ? JSON.parse(garden.elements) : []) : 
+          (garden.elements || [])
+      }));
+      
+      return gardens;
     } catch (error) {
       console.error('Error searching gardens:', error);
-      throw error;
-    }
-  }
-
-  async sortBy(field, direction = 'asc') {
-    await delay(200);
-    
-    if (!this.apperClient) this.initializeClient();
-    
-    try {
-      let sortField = field;
-      if (field === 'updatedAt') sortField = 'ModifiedOn';
-      if (field === 'createdAt') sortField = 'CreatedOn';
-      if (field === 'name') sortField = 'Name';
-      
-      const params = {
-        Fields: ['Name', 'Tags', 'Owner', 'description', 'elements', 'is_template', 'thumbnail', 'CreatedOn', 'ModifiedOn'],
-        orderBy: [
-          {
-            FieldName: sortField,
-            SortType: direction.toUpperCase()
-          }
-        ]
-      };
-      
-      const response = await this.apperClient.fetchRecords('garden', params);
-      
-      if (!response.success) {
-        console.error(response.message);
-        throw new Error(response.message);
-      }
-      
-      return response.data || [];
-    } catch (error) {
-      console.error('Error sorting gardens:', error);
       throw error;
     }
   }
